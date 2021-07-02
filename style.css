@@ -157,7 +157,7 @@ html {
 body {
 	background-color: #fff;
 	color: #333;
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: Muli, sans-serif;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 1.625;
@@ -242,7 +242,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	line-height: 1.2;
 	margin: 0 0 20px;
@@ -987,9 +987,17 @@ figcaption,
 ---------------------------------------------------------------------------- */
 
 .site-header {
-	background-color: #fff;
+	background-color: #990000;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 	padding: 0 30px;
+	height: 80px;
+}
+
+
+
+.custom-logo-link {
+	height: 120px; 		/* custom logo size-extends below menu bar */
+	width: auto;
 }
 
 /* Title Area
@@ -999,6 +1007,7 @@ figcaption,
 	float: left;
 	padding-bottom: 25px;
 	padding-top: 25px;
+	height: 60px;
 }
 
 .wp-custom-logo .title-area {
@@ -1026,7 +1035,7 @@ figcaption,
 .site-title a,
 .site-title a:focus,
 .site-title a:hover {
-	color: #333;
+	color: #FFF;
 	text-decoration: none;
 }
 
@@ -1457,14 +1466,14 @@ p.entry-meta {
 /* Media Queries
 ---------------------------------------------------------------------------- */
 
-@media only screen and (min-width: 480px) {
+/* @media only screen and (min-width: 480px) {
 
 	table {
 		table-layout: auto;
 		word-break: normal;
 	}
 
-}
+} */
 
 @media only screen and (min-width: 960px) {
 
@@ -1844,6 +1853,56 @@ p.entry-meta {
 	ol,
 	ul {
 		page-break-before: avoid;
+	}
+
+}
+
+
+
+/* custom media queries */
+
+
+@media only screen and (max-width: 600px) {
+
+	.wp-block-cover__inner-container h1 {
+		font-size: 2.5rem !important;
+		line-height: 0.8 !important;
+		margin-left: 2rem;
+		}
+		
+	.wp-block-cover__inner-container h2 {
+		font-size: 1.5rem !important;
+		line-height: 0.8!important;
+		margin-left: 2rem;
+		}
+
+	/* img.wp-block-media-text .image-background .wp-image-34   */
+	
+	
+	.wp-block-cover-image, 
+	.wp-block-cover
+	{
+		margin-top: 20px !important;
+		margin-bottom: 20px !important;
+	}
+
+	/* .wp-custom-logo .title-area img  {
+		width: 50%;
+		height: auto;
+	} */
+
+	}   /* 600px max */
+
+	/* wp-block-media-text__media */
+@media only screen and (max-width: 480px) {
+
+	table {
+		/* table-layout: auto;
+		word-break: normal; */
+	}
+
+	.title-area .h1 {
+		font-size: 12px !important;
 	}
 
 }
